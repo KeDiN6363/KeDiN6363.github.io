@@ -1,0 +1,22 @@
+table{
+border-collapse: collapse;
+width: 60%;
+margin: auto;
+margin-top: 20px;
+}
+td{
+	border: 5px solid #FF4500;
+	background-color:orange; 
+}
+body{
+	background-color: gold;
+
+}
+th{
+	border: 5px solid white;
+	background-color: white;
+}
+td,th{
+	padding:7px;
+}
+

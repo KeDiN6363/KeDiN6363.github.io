@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ОГЕНТ 007 илюминат? или "CSS селекторы"</title>
+	<link rel="stylesheet" href="style007.css">
+</head>
+<body>
+	<table>
+		<tr>
+			<th>CSS селектор</th>
+			<th>Пример</th>
+			<th>Описание</th>
+		</tr>
+		<tr id="1">
+			<td>.class</td>
+			<td>.myClass</td>
+			<td>Выбирает все эл-ты с классом myClass(class="myClass")</td>
+		</tr>
+		<tr id="2">
+			<td>#id</td>
+			<td>#main</td>
+			<td>Выбирает эл-т с идентификатором main(id="main")</td>
+		</tr>
+		<tr id="3">
+			<td>*</td>
+			<td>*</td>
+			<td>Выбирает все эл-ты</td>
+		</tr>
+		<tr id="4">
+			<td>эл-т</td>
+			<td>div</td>
+			<td>Выбор всех эл-в &ltdive&gt</td>
+		</tr>
+		<tr id="5">
+			<td>эл-т, эл-т</td>
+			<td>div, span</td>
+			<td>Выбор всех эл-в &ltdive&gt и всех эл-в &ltspan&gt </td>
+		</tr>
+		<tr id="6">
+			<td>[атрибут]</td>
+			<td>[href]</td>
+			<td>Все эл-ты с атрибутом href</td>
+		</tr>
+		<tr id="7">
+			<td>[атрибут="значение"]</td>
+			<td>[href="https://vk.com/"]</td>
+			<td>Выбирает все эл-ты с атрибутом href, значение которого точно совпадает со значением указанным в селекторе </td>
+		</tr>
+		<tr id="8">
+			<td>[атрибут~="значение"]</td>
+			<td>[title~="vk.com"]</td>
+			<td>Выбирает все эл-ты с атрибутом href, в значении которого(в любои месте) встречается подстрока (в виде отдельного слова) "vk.com"</td>
+		</tr>
+		<tr id="9">
+			<td>[атрибут*="значение"]</td>
+			<td>[href*="vk.com"]</td>
+			<td>Выбирает все эл-ты с атрибутом href, в значении которого(в любои месте) встречается подстрока (в виде отдельного слова или его части) "vk.com"</td>
+		</tr>
+		<tr id="10">
+			<td>эл-т эл-т</td>
+			<td>div span</td>
+			<td>Выбор всех эл-в &ltspan&gt внутри &ltdive&gt </td>
+		</tr>
+		<tr id="11">
+			<td>эл-т + эл-т</td>
+			<td>div+p</td>
+			<td>Выбирает все эл-ты &ltp&gt, которые расположенны сразу после эл-в &ltdiv&gt </td>
+		</tr>
+		<tr id="12">
+			<td>эл-т ~ эл-т</td>
+			<td>p~div</td>
+			<td>Выбирает все эл-ты &ltdiv&gt, которые расположенны сразу перед эл-м &ltp&gt</td>
+		</tr>
+		<tr id="13">
+			<td>эл-т: nth-child(номер)</td>
+			<td>div:nth-child(3)</td>
+			<td>Выбирает третий эл-т, который лежит внутри ltdiv&gt</td>
+		</tr>
+	</table>
+	
+</body>
+</html>
